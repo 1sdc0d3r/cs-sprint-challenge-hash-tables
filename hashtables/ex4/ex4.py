@@ -1,9 +1,14 @@
 def has_negatives(a):
-    """
-    YOUR CODE HERE
-    """
+    result = []
     # Your code here
-
+    cache = {}
+    print(a)
+    for n in a:
+        if n not in cache:
+            cache[n] = n*-1
+            if cache[n] in cache and n != 0:
+                result.append(abs(cache[n]))
+    # print(cache)
     return result
 
 
