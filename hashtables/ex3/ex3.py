@@ -7,6 +7,8 @@ def intersection(arrays):
                 nums[n] = 1
             else:
                 nums[n] += 1
+                # result.append(n)
+
     for n in nums:
         if nums[n] > 1:
             result.append(n)

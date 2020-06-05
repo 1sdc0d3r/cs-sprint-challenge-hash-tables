@@ -2,7 +2,6 @@ def has_negatives(a):
     result = []
     # Your code here
     cache = {}
-    print(a)
     for n in a:
         if n not in cache:
             cache[n] = n*-1
